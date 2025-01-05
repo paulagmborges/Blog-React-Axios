@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 //paginas
 import Home from './routes/Home.jsx'
 import NewPost from './routes/NewPost.jsx'
-
+import Post from './routes/Post'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -22,9 +22,14 @@ const router = createBrowserRouter([
     {
        path:'/new',
        element: <NewPost />
-    }
-  ]
-}
+    },
+    {
+      path:'/posts/:id',
+      element: <Post />
+      
+   }
+  ],
+},
 ])
 
 createRoot(document.getElementById('root')).render(
