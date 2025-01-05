@@ -8,7 +8,7 @@ import './Post.css'
 
 const Post = () => {
   const { id } = useParams();
-  const [post, setPost] = useState([]);
+    const [post, setPost] = useState({});
 
   const getPost = async () => {
     try {
